@@ -138,7 +138,7 @@ export default function Footer() {
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
+                  className="w-10 h-10  bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
                 >
                   <Send className="w-5 h-5  hover:text-[#BE968E]" />
                 </a>

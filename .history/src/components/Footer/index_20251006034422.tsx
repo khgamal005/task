@@ -34,6 +34,7 @@ export default function Navbar() {
     { title: "FAQs", href: Routes.FAQs },
   ];
 
+  // ✅ React to login/logout automatically (using custom authChange event)
   useEffect(() => {
     const checkAuth = () => {
       const token = localStorage.getItem("token");
@@ -47,7 +48,7 @@ export default function Navbar() {
       }
     };
 
-    checkAuth(); 
+    checkAuth(); // run once on mount
     window.addEventListener("authChange", checkAuth);
 
     return () => window.removeEventListener("authChange", checkAuth);

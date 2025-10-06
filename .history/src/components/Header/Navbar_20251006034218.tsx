@@ -47,7 +47,7 @@ export default function Navbar() {
       }
     };
 
-    checkAuth(); 
+    checkAuth(); // run once on mount
     window.addEventListener("authChange", checkAuth);
 
     return () => window.removeEventListener("authChange", checkAuth);

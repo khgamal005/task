@@ -18,7 +18,7 @@ export default function Footer() {
     <footer 
       className="w-full border-t border-gray-200 relative min-h-[400px]"
       style={{
-        backgroundColor: "#020202B2",
+        backgroundColor: "##020202B2",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
@@ -99,7 +99,7 @@ export default function Footer() {
                   />
                   <button
                     type="submit"
-                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#BE968E] text-white py-2 px-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center text-sm font-medium"
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-[#BE968E] py-2 px-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center text-sm font-medium"
                     style={{ width: "120px" }}
                   >
                     Send
@@ -116,31 +116,31 @@ export default function Footer() {
                   href="#"
                   className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
                 >
-                  <Facebook className="w-5 h-5  hover:text-[#BE968E]" />
+                  <Facebook className="w-5 h-5 text-white hover:text-[#BE968E]" />
                 </a>
                 <a
                   href="#"
                   className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
                 >
-                  <Instagram className="w-5 h-5  hover:text-[#BE968E]" />
+                  <Instagram className="w-5 h-5 text-white hover:text-[#BE968E]" />
                 </a>
                 <a
                   href="#"
                   className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
                 >
-                  <Twitter className="w-5 h-5  hover:text-[#BE968E]" />
+                  <Twitter className="w-5 h-5 text-white hover:text-[#BE968E]" />
                 </a>
                 <a
                   href="#"
                   className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
                 >
-                  <Linkedin className="w-5 h-5  hover:text-[#BE968E]" />
+                  <Linkedin className="w-5 h-5 text-white hover:text-[#BE968E]" />
                 </a>
                 <a
                   href="#"
                   className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
                 >
-                  <Send className="w-5 h-5  hover:text-[#BE968E]" />
+                  <Send className="w-5 h-5 text-white hover:text-[#BE968E]" />
                 </a>
               </div>
             </div>

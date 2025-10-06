@@ -8,6 +8,7 @@ import Breadcrumb from './Breadcrumb';
 import ProductImages from './ProductImages';
 import ProductInfo from './ProductInfo';
 import ProductReviews from './ProductReviews';
+import RelatedProducts from './RelatedProducts';
 
 
 export default function ProductDetailsClient() {

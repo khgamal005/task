@@ -99,7 +99,7 @@ export default function Footer() {
                   />
                   <button
                     type="submit"
-                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#BE968E] text-white py-2 px-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center text-sm font-medium"
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-[#BE968E] py-2 px-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center text-sm font-medium"
                     style={{ width: "120px" }}
                   >
                     Send
@@ -138,7 +138,7 @@ export default function Footer() {
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
+                  className="w-10 h-10 bg-{} bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
                 >
                   <Send className="w-5 h-5  hover:text-[#BE968E]" />
                 </a>

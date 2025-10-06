@@ -99,7 +99,7 @@ export default function Footer() {
                   />
                   <button
                     type="submit"
-                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#BE968E] text-white py-2 px-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center text-sm font-medium"
+                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#BE968E] text- py-2 px-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center text-sm font-medium"
                     style={{ width: "120px" }}
                   >
                     Send
