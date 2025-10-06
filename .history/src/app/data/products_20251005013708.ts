@@ -1,0 +1,17 @@
+export const products = [
+  {
+    id: 1,
+    name: 'Stylish Running Shoes',
+    description:
+      'Lightweight and breathable running shoes with cushioned soles for all-day comfort.',
+    price: 79.99,
+    color: 'Red & Black',
+    images: [
+      'https://res.cloudinary.com/davb7cdki/image/upload/v1728170458/small_1_10_21bedca09b.jpg',
+      'https://res.cloudinary.com/davb7cdki/image/upload/v1728170458/thumbnail_1_10_21bedca09b.jpg',
+      '/images/shoes3.jpg',
+      '/images/shoes4.jpg',
+    ],
+  },
+
+];

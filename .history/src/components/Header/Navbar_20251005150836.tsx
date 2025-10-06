@@ -1,0 +1,136 @@
+'use client';
+
+import { useState } from 'react';
+import { Menu, X, ShoppingBag, Bell, Heart, User } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+
+export default function Navbar() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  
+  const links = [
+    {
+      id: crypto.randomUUID(),
+      title: "Home",
+      href: "#home",
+    },
+    {
+      id: crypto.randomUUID(),
+      title: 'ourcategory',
+      href: Routes.ourcategory,
+    },
+    {
+      id: crypto.randomUUID(),
+      title: 'AboutUs',
+      href: Routes.CONTACT,
+    },
+    {
+      id: crypto.randomUUID(),
+      title: 'contactUs',
+      href: Routes.CONTACT,
+    },
+    {
+      id: crypto.randomUUID(),
+      title: 'FAQs',
+      href: Routes.FAQs,
+    },
+  ];
+
+  return (
+    <nav className="w-full bg-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16 items-center">
+          {/* Left / Logo */}
+          <div className="flex items-center">
+            <Link href="/">
+              <Image src="/loge.png" alt="Logo" width={120} height={40} className="object-contain"/>
+            </Link>
+          </div>
+
+          {/* Desktop Links */}
+          <div className="hidden md:flex space-x-8 items-center">
+            {Links.map(link => (
+              <Link key={link.id} href={link.href} className="text-gray-700 hover:text-gray-900 font-medium">
+                {link.title}
+              </Link>
+            ))}
+          </div>
+
+          {/* Right Icons */}
+          <div className="hidden md:flex items-center space-x-4">
+            <ShoppingBag className="w-6 h-6 cursor-pointer"/>
+            <Bell className="w-6 h-6 cursor-pointer"/>
+            <Heart className="w-6 h-6 cursor-pointer"/>
+            
+            {/* Language Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="px-2 py-1 border rounded cursor-pointer">EN</DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem>EN</DropdownMenuItem>
+                <DropdownMenuItem>AR</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* User Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="px-2 py-1 border rounded flex items-center gap-1 cursor-pointer">
+                <User className="w-4 h-4"/> Account
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem>Profile</DropdownMenuItem>
+                <DropdownMenuItem>Logout</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden flex items-center">
+            <button onClick={() => setMobileOpen(!mobileOpen)}>
+              {mobileOpen ? <X className="w-6 h-6"/> : <Menu className="w-6 h-6"/>}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {mobileOpen && (
+        <div className="md:hidden px-4 pb-4 space-y-4">
+          {Links.map(link => (
+            <Link key={link.id} href={link.href} className="block text-gray-700 hover:text-gray-900 font-medium">
+              {link.title}
+            </Link>
+          ))}
+
+          <div className="flex items-center space-x-4">
+            <ShoppingBag className="w-6 h-6"/>
+            <Bell className="w-6 h-6"/>
+            <Heart className="w-6 h-6"/>
+          </div>
+
+          {/* Mobile Language Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger className="px-2 py-1 border rounded cursor-pointer">EN</DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem>EN</DropdownMenuItem>
+              <DropdownMenuItem>AR</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          {/* Mobile User Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger className="px-2 py-1 border rounded flex items-center gap-1 cursor-pointer">
+              <User className="w-4 h-4"/> Account
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem>Profile</DropdownMenuItem>
+              <DropdownMenuItem>Logout</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+      )}
+    </nav>
+  );
+}
+
