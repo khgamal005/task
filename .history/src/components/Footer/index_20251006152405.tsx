@@ -20,7 +20,7 @@ export default function Footer() {
   <div className="absolute inset-0 z-0 bg-[url('https://res.cloudinary.com/davb7cdki/image/upload/v1759752487/footer_atcdq6.png')] bg-cover bg-center bg-no-repeat" />
   
   {/* Background Overlay for better readability */}
-  <div className="absolute inset-0 bg-[#020202B2] bg-opacity-70 z-0" />
+  <div className="absolute inset-0 bg-[#] bg-opacity-70 z-0" />
   
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
     {/* Main Footer Content - 4 Columns */}

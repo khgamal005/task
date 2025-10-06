@@ -20,7 +20,7 @@ export default function Footer() {
   <div className="absolute inset-0 z-0 bg-[url('https://res.cloudinary.com/davb7cdki/image/upload/v1759752487/footer_atcdq6.png')] bg-cover bg-center bg-no-repeat" />
   
   {/* Background Overlay for better readability */}
-  <div className="absolute inset-0 bg-[#020202B2] bg-opacity-70 z-0" />
+  <div className="absolute inset-0 bg-black bg-opacity-70 z-0" />
   
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
     {/* Main Footer Content - 4 Columns */}
@@ -116,31 +116,31 @@ export default function Footer() {
               href="#"
               className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors duration-200 group"
             >
-              <Facebook className="w-5 h-5  group-hover:text-[#BE968E]" />
+              <Facebook className="w-5 h-5 text-white group-hover:text-[#BE968E]" />
             </a>
             <a
               href="#"
               className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors duration-200 group"
             >
-              <Instagram className="w-5 h-5  group-hover:text-[#BE968E]" />
+              <Instagram className="w-5 h-5 text-white group-hover:text-[#BE968E]" />
             </a>
             <a
               href="#"
               className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors duration-200 group"
             >
-              <Twitter className="w-5 h-5  group-hover:text-[#BE968E]" />
+              <Twitter className="w-5 h-5 text-white group-hover:text-[#BE968E]" />
             </a>
             <a
               href="#"
               className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors duration-200 group"
             >
-              <Linkedin className="w-5 h-5  group-hover:text-[#BE968E]" />
+              <Linkedin className="w-5 h-5 text-white group-hover:text-[#BE968E]" />
             </a>
             <a
               href="#"
               className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors duration-200 group"
             >
-              <Send className="w-5 h-5  group-hover:text-[#BE968E]" />
+              <Send className="w-5 h-5 text-white group-hover:text-[#BE968E]" />
             </a>
           </div>
         </div>

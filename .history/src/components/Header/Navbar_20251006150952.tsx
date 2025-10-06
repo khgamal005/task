@@ -27,7 +27,7 @@ export default function Navbar() {
   const logo = "/logo.PNG";
 
   const links = [
-    { title: "Home", href: "/" },
+    { title: "Home", href: "" },
     { title: "Our Category", href: Routes.ourcategory },
     { title: "About Us", href: Routes.CONTACT },
     { title: "Contact Us", href: Routes.CONTACT },
@@ -69,7 +69,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-8">
             <Link href="/">
               <Image
-                src="https://res.cloudinary.com/davb7cdki/image/upload/v1759752570/logo_rns25z.png"
+                src={logo}
                 alt="Logo"
                 width={66}
                 height={51}

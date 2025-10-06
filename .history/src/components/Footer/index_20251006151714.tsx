@@ -17,10 +17,18 @@ export default function Footer() {
   return (
 <footer className="w-full border-t border-gray-200 relative min-h-[400px]">
   {/* Background Image */}
-  <div className="absolute inset-0 z-0 bg-[url('https://res.cloudinary.com/davb7cdki/image/upload/v1759752487/footer_atcdq6.png')] bg-cover bg-center bg-no-repeat" />
+  <div 
+    className="absolute inset-0 z-0"
+    style={{
+      backgroundImage: "url('https://res.cloudinary.com/davb7cdki/image/upload/v1759752487/footer_atcdq6.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat"
+    }}
+  />
   
   {/* Background Overlay for better readability */}
-  <div className="absolute inset-0 bg-[#020202B2] bg-opacity-70 z-0" />
+  <div className="absolute inset-0 bg-black bg-opacity-70 z-0" />
   
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
     {/* Main Footer Content - 4 Columns */}
@@ -50,13 +58,13 @@ export default function Footer() {
       <div className="col-span-1">
         <h5 className="font-semibold text-white mb-4 text-lg">Let Us Help</h5>
         <div className="flex flex-col space-y-3">
-          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors duration-200">
+          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors">
             My Account
           </a>
-          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors duration-200">
+          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors">
             Categories
           </a>
-          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors duration-200">
+          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors">
             All Products
           </a>
         </div>
@@ -66,16 +74,16 @@ export default function Footer() {
       <div className="col-span-1">
         <h5 className="font-semibold text-white mb-4 text-lg">Policies</h5>
         <div className="flex flex-col space-y-3">
-          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors duration-200">
+          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors">
             Refund Policy
           </a>
-          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors duration-200">
+          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors">
             Cancellation Policy
           </a>
-          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors duration-200">
+          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors">
             Terms and Conditions
           </a>
-          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors duration-200">
+          <a href="#" className="text-white hover:text-gray-200 text-sm transition-colors">
             Privacy Policy
           </a>
         </div>
@@ -95,12 +103,13 @@ export default function Footer() {
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full pl-10 pr-32 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent text-sm bg-white bg-opacity-20 text-white placeholder-gray-300 backdrop-blur-sm"
+                className="w-full pl-10 pr-[130px] py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent text-sm bg-white bg-opacity-20 text-white placeholder-gray-300 backdrop-blur-sm"
                 required
               />
               <button
                 type="submit"
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#BE968E] text-white py-2 px-3 rounded-lg hover:bg-opacity-90 transition-colors duration-200 flex items-center justify-center text-sm font-medium w-30"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#BE968E] text-white py-2 px-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center text-sm font-medium"
+                style={{ width: "120px" }}
               >
                 Send
               </button>
@@ -114,33 +123,33 @@ export default function Footer() {
           <div className="flex space-x-4">
             <a
               href="#"
-              className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors duration-200 group"
+              className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
             >
-              <Facebook className="w-5 h-5  group-hover:text-[#BE968E]" />
+              <Facebook className="w-5 h-5 hover:text-[#BE968E]" />
             </a>
             <a
               href="#"
-              className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors duration-200 group"
+              className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
             >
-              <Instagram className="w-5 h-5  group-hover:text-[#BE968E]" />
+              <Instagram className="w-5 h-5 hover:text-[#BE968E]" />
             </a>
             <a
               href="#"
-              className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors duration-200 group"
+              className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
             >
-              <Twitter className="w-5 h-5  group-hover:text-[#BE968E]" />
+              <Twitter className="w-5 h-5 hover:text-[#BE968E]" />
             </a>
             <a
               href="#"
-              className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors duration-200 group"
+              className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
             >
-              <Linkedin className="w-5 h-5  group-hover:text-[#BE968E]" />
+              <Linkedin className="w-5 h-5 hover:text-[#BE968E]" />
             </a>
             <a
               href="#"
-              className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors duration-200 group"
+              className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-white hover:text-[#BE968E] transition-colors"
             >
-              <Send className="w-5 h-5  group-hover:text-[#BE968E]" />
+              <Send className="w-5 h-5 hover:text-[#BE968E]" />
             </a>
           </div>
         </div>

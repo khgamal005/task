@@ -7,7 +7,7 @@ export default function ProductDetailsHeader() {
       {/* Background Image */}
       <div className="w-full h-40 relative">
         <Image
-          src="/3d.PNG"
+          src="https://res.cloudinary.com/davb7cdki/image/upload/v1759752286/3d_cqdype.png"
           alt="Product Details Background"
           fill
           className="object-cover"
